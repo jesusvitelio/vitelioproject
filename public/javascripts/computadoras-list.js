@@ -16,6 +16,7 @@ $(function(){
 			row += "<td>"+val.procesador+"</td>";
 			row += "<td>"+val.memoria+"</td>";
 			row += "<td>"+val.fecha+"</td>";
+			row += "<td><a href='/pc/editar/"+val.id+"' class='btn btn-primary'>Editar</a> <a href='/pc/eliminar/"+val.id+"' onclick='return confirm('¿Esta seguro de eliminar este registro?')' class='btn btn-danger'>Eliminar</a> </td>";
 			row += "</tr>";
 			tbody.append(row);
 

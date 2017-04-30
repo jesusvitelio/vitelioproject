@@ -13,3 +13,11 @@ GET 	/pc/nueva 					controllers.PCController.guardarPC
 GET 	/pc/lista					controllers.PCController.listapc
 
 GET 	/pc/listar					controllers.PCController.listar
+
+GET		/pc/create					controllers.PCController.guardarvista
+
+GET		/pc/eliminar/:id			controllers.PCController.eliminar(id:Long)
+
+GET		/pc/editar/:id 				controllers.PCController.editar(id:Long)
+
+POST	/pc/actualizar/:id 			controllers.PCController.actualizar(id:Long)
